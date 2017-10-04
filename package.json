@@ -1,0 +1,36 @@
+{
+  "name": "pwet-slides",
+  "version": "0.1.0",
+  "description": "Pwet component that shows a slides",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gastonite/pwet-slides.git"
+  },
+  "keywords": [
+    "usetheplateform",
+    "components",
+    "webcomponents",
+    "customElements",
+    "custom",
+    "element",
+    "slides",
+    "slider"
+  ],
+  "author": "Clément Pasquier <clement@n00sphere.net>",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/gastonite/pwet-slides/issues"
+  },
+  "homepage": "https://github.com/gastonite/pwet-slides#readme",
+  "dependencies": {
+    "@webcomponents/webcomponentsjs": "^1.0.13",
+    "easy-css-transform-builder": "^0.0.2",
+    "idom-util": "^1.0.2",
+    "pwet": "gastonite/pwet.git#v2",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0"
+  }
+}
