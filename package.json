@@ -1,6 +1,6 @@
 {
   "name": "pwet-slides",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Pwet component that shows a slides",
   "main": "src/index.js",
   "scripts": {
