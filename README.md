@@ -7,7 +7,7 @@
 To show it in action:
 1. clone the repo :
 ```
-git clone https://github.com/Gastonite/pwet-slides
+git clone https://github.com/Gastonite/pwet-slides && cd pwet-slides
 ```
 2. Install **pwet-slides** dependencies and example dependencies:
 
@@ -17,7 +17,7 @@ git clone https://github.com/Gastonite/pwet-slides
   ```
 - if you are using npm :
   ```
-  npm i && cd examples/simple && npm i && yarn run dev
+  npm i && cd examples/simple && npm i && npm run dev
   ```
 
 3. Now the demo is visible at [http://localhost:3000](http://localhost:3000)

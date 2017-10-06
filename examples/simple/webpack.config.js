@@ -42,19 +42,17 @@ module.exports = (env) => {
     }
   };
 
-  const loaders = [
-    {test: /\.js$/, use: 'babel-loader'},
-    {test: /\.styl$/, use: [
-      'to-string-loader',
-      'css-loader',
-      'stylus-loader'
-    ]},
-    { test: /\.jpg/, loader: 'file-loader' }
-    //{test: /\.styl$/, use: ExtractTextPlugin.extract({
-    //  fallback: {loader: 'style-loader'},
-    //  use: ['css-loader', 'stylus-relative-loader']
-    //})}
-  ];
+  const module = {
+    loaders: [
+      {test: /\.js$/, use: 'babel-loader'},
+      {test: /\.styl$/, use: [
+        'to-string-loader',
+        'css-loader',
+        'stylus-loader'
+      ]},
+      { test: /\.jpg/, loader: 'file-loader' }
+    ]
+  };
 
   const plugins = [new Webpack.NamedModulesPlugin()];
 
@@ -80,19 +78,22 @@ module.exports = (env) => {
         minifyCSS: true,
         minifyURLs: true
       }
-    }),
-    //new ExtractTextPlugin("style.css")
+    })
   );
+
+  const resolve = {
+    alias: {
+      pwet: Path.resolve(__dirname, './node_modules/pwet')
+    }
+  };
 
   return {
     entry,
     output,
     devtool,
+    resolve,
     devServer,
-    module: {
-      loaders
-    },
+    module,
     plugins
   };
-
 };

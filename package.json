@@ -1,6 +1,6 @@
 {
   "name": "pwet-slides",
-  "version": "0.1.0",
+  "version": "0.0.0",
   "description": "Pwet component that shows a slides",
   "main": "src/index.js",
   "scripts": {
@@ -28,9 +28,13 @@
   "homepage": "https://github.com/gastonite/pwet-slides#readme",
   "dependencies": {
     "@webcomponents/webcomponentsjs": "^1.0.13",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
     "easy-css-transform-builder": "^0.0.2",
-    "idom-util": "^1.0.2",
-    "pwet": "gastonite/pwet.git#v2",
-    "babel-plugin-transform-object-rest-spread": "^6.26.0"
+    "incremental-dom": "^0.5.1",
+    "kwak": "^2.0.4",
+    "pwet-idom": "^0.1.5"
+  },
+  "peerDependencies": {
+    "pwet": "^2.0.1"
   }
 }
